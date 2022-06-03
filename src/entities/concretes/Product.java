@@ -5,19 +5,21 @@ public class Product {
 	private int id;
 	private String name;
 	private int unitPrice;
-	private int stockNumber;
+	private int categoryID;
 	
 	public Product() {
 		super();
 	}
-	public Product(int id, String name, int unitPrice, int stockNumber) {
+	public Product(int id, String name, int unitPrice, int categoryID) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.unitPrice = unitPrice;
-		this.stockNumber=stockNumber;
+		this.categoryID=categoryID;
+		
 	}
 	public int getId() {
+		
 		return id;
 	}
 	public void setId(int id) {
@@ -35,14 +37,13 @@ public class Product {
 	public void setUnitPrice(int unitPrice) {
 		this.unitPrice = unitPrice;
 	}
-	public int getStockNumber() {
-		return stockNumber;
+	public int getCategoryID() {
+		return categoryID;
 	}
-	public void setStockNumber(int stockNumber) {
-		this.stockNumber = stockNumber;
+	public void setCategoryID(int categoryID) {
+		this.categoryID = categoryID;
 	}
-	
-	
+
 	
 	
 

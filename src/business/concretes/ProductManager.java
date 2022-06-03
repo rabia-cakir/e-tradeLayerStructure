@@ -1,5 +1,6 @@
 package business.concretes;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import business.abstracts.ProductService;
@@ -18,6 +19,7 @@ public class ProductManager implements ProductService{
 	@Override
 	public void add(Product product) {
 		// TODO Auto-generated method stub
+		
 		productRepository.add(product);
 		
 	}
@@ -25,6 +27,7 @@ public class ProductManager implements ProductService{
 	@Override
 	public void delete(Product product) {
 		// TODO Auto-generated method stub
+
 		
 		
 	}

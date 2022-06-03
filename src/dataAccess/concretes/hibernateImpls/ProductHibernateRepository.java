@@ -1,16 +1,19 @@
 package dataAccess.concretes.hibernateImpls;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import dataAccess.abstracts.ProductRepository;
 import entities.concretes.Product;
 
 public class ProductHibernateRepository implements ProductRepository {
+	List<Product> products = new ArrayList<Product>();
 
 	@Override
 	public void add(Product product) {
 		// TODO Auto-generated method stub
-		System.out.println("hibernate ile eklendi");
+		products.add(product);
+		System.out.println("hibernate ile eklendi"+ product.getName());
 		
 	}
 
